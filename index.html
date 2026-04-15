@@ -1220,7 +1220,6 @@ document.getElementById('cod-form').addEventListener('submit',function(e){
   var phone=document.getElementById('field-phone').value.trim();
   var city=document.getElementById('field-city').value;
   var address=document.getElementById('field-address').value.trim();
-  var notes=document.getElementById('field-notes').value.trim();
   var utm=getUTM();
 
   if(!name||!phone||!city||!address){alert('يرجى تعبئة جميع الحقول المطلوبة');return;}
@@ -1237,7 +1236,7 @@ document.getElementById('cod-form').addEventListener('submit',function(e){
     sku:selectedBundle.sku,
     product:'غسول Quarxery المُعمّق — ضد حبوب الظهر وطفيليات المسام',
     quantity:selectedBundle.qty,price:selectedBundle.price,currency:'SAR',
-    notes:notes,
+    notes:'',
     utm_source:utm.utm_source,utm_medium:utm.utm_medium,
     utm_campaign:utm.utm_campaign,utm_term:utm.utm_term,utm_content:utm.utm_content,
     national_address:city+' — '+address
