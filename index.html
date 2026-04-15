@@ -1013,63 +1013,55 @@ body {
   </div>
 </div>
 
-<!-- BUNDLES: Cream2 background — decision zone -->
-<section class="bundle-section reveal" id="bundles">
-  <span class="badge badge-orange">اختر عرضك</span>
-  <h2 class="section-h">كلما زدت <em>كلما وفّرت</em></h2>
-  <p class="section-p">اختر الكمية المناسبة — والدفع نقداً عند الاستلام</p>
-  <div class="bundles">
-    <div class="bundle" data-qty="1" data-price="215" data-sku="QUARXERY-1X">
-      <div class="bundle-radio"></div>
-      <div class="bundle-info">
-        <p class="bundle-title">🧴 زجاجة واحدة</p>
-        <p class="bundle-save">215 ر.س للزجاجة</p>
-      </div>
-      <div class="bundle-prices">
-        <p class="bundle-price">215 ر.س</p>
-      </div>
-    </div>
-    <div class="bundle selected" data-qty="2" data-price="320" data-sku="QUARXERY-2X">
-      <div class="bundle-radio"></div>
-      <div class="bundle-info">
-        <span class="bundle-best">⭐ الأكثر طلباً</span>
-        <p class="bundle-title">🧴🧴 زجاجتين</p>
-        <p class="bundle-save">وفّر 110 ر.س — 160 ر.س للزجاجة</p>
-      </div>
-      <div class="bundle-prices">
-        <p class="bundle-old">430 ر.س</p>
-        <p class="bundle-price">320 ر.س</p>
-      </div>
-    </div>
-    <div class="bundle" data-qty="3" data-price="399" data-sku="QUARXERY-3X">
-      <div class="bundle-radio"></div>
-      <div class="bundle-info">
-        <p class="bundle-title">🧴🧴🧴 ثلاث زجاجات</p>
-        <p class="bundle-save">وفّر 246 ر.س — 133 ر.س للزجاجة</p>
-      </div>
-      <div class="bundle-prices">
-        <p class="bundle-old">645 ر.س</p>
-        <p class="bundle-price">399 ر.س</p>
-      </div>
-    </div>
-  </div>
-  <a href="#order-form" class="cta-btn cta-btn-lg pulse">🛒 اطلب الآن — الدفع عند الاستلام</a>
-</section>
-
-<!-- GUARANTEE: Dark premium + shield -->
-<div style="padding:20px;">
-  <div class="guarantee-box reveal">
-    <div class="guarantee-icon">🛡️</div>
-    <h3 class="guarantee-title">ضمان رضاك أولويتنا</h3>
-    <p class="guarantee-body">نثق بجودة منتجنا 100٪. طلبك محمي والدفع نقداً عند الاستلام — ما فيه أي مخاطرة من جهتك. جرّب واحكم بنفسك.</p>
-  </div>
-</div>
-
-<!-- ORDER FORM: Dark brown serious + orange action -->
+<!-- COMBINED BUNDLE + ORDER FORM — one seamless section -->
 <section class="form-section" id="order-form">
-  <h2 class="form-title">🛒 أكمل طلبك الآن<br><em>الدفع عند الاستلام</em></h2>
-  <p class="form-sub">أدخل بياناتك وسنتواصل معك لتأكيد الطلب</p>
+  <h2 class="form-title">🛒 اطلب الآن<br><em>الدفع عند الاستلام</em></h2>
+  <p class="form-sub">اختر كميتك ثم أدخل بياناتك — وسنتواصل معك لتأكيد الطلب</p>
+
   <div class="form-card">
+
+    <!-- STEP 1: BUNDLE SELECTOR -->
+    <p style="font-size:13px;font-weight:800;color:var(--brown);margin-bottom:10px;">الخطوة 1 — اختر كميتك:</p>
+    <div class="bundles" style="margin-bottom:20px;">
+      <div class="bundle" data-qty="1" data-price="215" data-sku="QUARXERY-1X">
+        <div class="bundle-radio"></div>
+        <div class="bundle-info">
+          <p class="bundle-title">🧴 زجاجة واحدة</p>
+          <p class="bundle-save">215 ر.س للزجاجة</p>
+        </div>
+        <div class="bundle-prices">
+          <p class="bundle-price">215 ر.س</p>
+        </div>
+      </div>
+      <div class="bundle selected" data-qty="2" data-price="320" data-sku="QUARXERY-2X">
+        <div class="bundle-radio"></div>
+        <div class="bundle-info">
+          <span class="bundle-best">⭐ الأكثر طلباً</span>
+          <p class="bundle-title">🧴🧴 زجاجتين</p>
+          <p class="bundle-save">وفّر 110 ر.س — 160 ر.س للزجاجة</p>
+        </div>
+        <div class="bundle-prices">
+          <p class="bundle-old">430 ر.س</p>
+          <p class="bundle-price">320 ر.س</p>
+        </div>
+      </div>
+      <div class="bundle" data-qty="3" data-price="399" data-sku="QUARXERY-3X">
+        <div class="bundle-radio"></div>
+        <div class="bundle-info">
+          <p class="bundle-title">🧴🧴🧴 ثلاث زجاجات</p>
+          <p class="bundle-save">وفّر 246 ر.س — 133 ر.س للزجاجة</p>
+        </div>
+        <div class="bundle-prices">
+          <p class="bundle-old">645 ر.س</p>
+          <p class="bundle-price">399 ر.س</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIVIDER -->
+    <div style="height:1.5px;background:var(--orange-light);margin-bottom:20px;"></div>
+
+    <!-- STEP 2: ORDER SUMMARY -->
     <div class="order-summary" id="order-summary">
       <p class="order-summary-title">ملخص طلبك:</p>
       <div class="order-row">
@@ -1085,6 +1077,9 @@ body {
         <span id="summary-total">320 ر.س</span>
       </div>
     </div>
+
+    <!-- STEP 3: FORM -->
+    <p style="font-size:13px;font-weight:800;color:var(--brown);margin-bottom:14px;">الخطوة 2 — أدخل بياناتك:</p>
     <form id="cod-form">
       <div class="form-group">
         <label class="form-label">الاسم الكامل <span>*</span></label>
@@ -1110,10 +1105,6 @@ body {
         <label class="form-label">العنوان التفصيلي <span>*</span></label>
         <input type="text" class="form-input" id="field-address" placeholder="الحي، الشارع، رقم المبنى" required>
       </div>
-      <div class="form-group">
-        <label class="form-label">ملاحظات إضافية</label>
-        <input type="text" class="form-input" id="field-notes" placeholder="أي تفاصيل إضافية (اختياري)">
-      </div>
       <button type="submit" class="submit-btn pulse" id="submit-btn">
         <span id="btn-text">✅ تأكيد الطلب — الدفع عند الاستلام</span>
         <span class="loading" id="btn-loading"><span class="spinner"></span> جاري الإرسال...</span>
@@ -1123,11 +1114,13 @@ body {
         <p>بياناتك محمية وآمنة — لن تُشارك مع أي جهة خارجية</p>
       </div>
     </form>
+
     <div class="success-box" id="success-box">
       <div class="success-icon">🎉</div>
       <h3 class="success-title">تم استلام طلبك بنجاح!</h3>
       <p class="success-sub">شكراً لك! سيتواصل معك فريقنا خلال 24 ساعة لتأكيد الطلب وترتيب التوصيل. الدفع عند الاستلام.</p>
     </div>
+
   </div>
 </section>
 
