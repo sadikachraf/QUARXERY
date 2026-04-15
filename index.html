@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>غسول Quarxery — ضد حبوب الظهر وطفيليات المسام</title>
+<meta name="description" content="غسول جسم متخصص يصل لعمق المسام ويقضي على الطفيليات المجهرية سبب الحبوب والحكة — فرق واضح من أول أسبوع">
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','778731385018899');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=778731385018899&ev=PageView&noscript=1"/></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   NEUROMARKETING COLOR SYSTEM
+   Each color has a specific psychological role
+   ============================================
+   ORANGE  #E8750A → Impulse, urgency, CTA — drives action
+   CREAM   #FFF8F3 → Purity, cleanliness, calm — keeps reading
+   AMBER   #F5A623 → Warmth, quality, premium accent
+   BROWN   #1C0F05 → Authority, luxury, premium dark
+   RED     #DC2626 → Fear of missing out, urgency ONLY
+   GREEN   #16A34A → Trust, safety, approval ONLY
+   ============================================ */
+:root {
+  --orange:       #E8750A;
+  --orange-light: #FDEBD0;
+  --orange-dark:  #C4620A;
+  --orange-glow:  rgba(232,117,10,0.18);
+  --amber:        #F5A623;
+  --amber-light:  #FEF3DC;
+  --brown:        #1C0F05;
+  --brown-mid:    #3D1F0A;
+  --brown-light:  #6B3D1E;
+  --cream:        #FFF8F3;
+  --cream2:       #FDF2E8;
+  --cream3:       #FAE8D4;
+  --white:        #FFFFFF;
+  --text:         #1C0F05;
+  --text-mid:     #5C3D28;
+  --text-soft:    #8B6347;
+  --green:        #16A34A;
+  --green-light:  #DCFCE7;
+  --red:          #DC2626;
+  --red-light:    #FEE2E2;
+  --font: 'Tajawal', sans-serif;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --shadow-orange: 0 4px 24px rgba(232,117,10,0.3);
+  --shadow-soft: 0 2px 12px rgba(28,15,5,0.08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font);
+  background: var(--cream);
+  color: var(--text);
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+/* ── ANNOUNCEMENT BAR
+   Brown bg = authority + premium
+   Orange text = urgency trigger ── */
+.announcement {
+  background: var(--brown);
+  color: var(--white);
+  text-align: center;
+  padding: 11px 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.announcement em { color: var(--amber); font-style: normal; }
+.announcement strong { color: var(--orange); }
+
+/* ── HEADER
+   White bg = clean, trustworthy
+   Sticky = always visible CTA ── */
+.header {
+  background: var(--white);
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2.5px solid var(--orange);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 16px var(--orange-glow);
+}
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo-mark {
+  width: 38px; height: 38px;
+  background: var(--orange);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow-orange);
+}
+.logo-q { color: var(--white); font-size: 20px; font-weight: 900; }
+.logo-name { font-size: 17px; font-weight: 900; color: var(--brown); letter-spacing: 1px; }
+
+/* ── CTA BUTTON
+   Orange = #1 impulse purchase trigger in neuromarketing
+   Pulse animation = draws eye subconsciously ── */
+.cta-btn {
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  padding: 11px 22px;
+  border-radius: 25px;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-orange);
+}
+.cta-btn:hover { background: var(--orange-dark); transform: scale(1.04); }
+.cta-btn-lg {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  border-radius: var(--radius-md);
+  font-size: 19px;
+  text-align: center;
+}
+.cta-btn-secondary {
+  display: block;
+  max-width: 440px;
+  margin: 10px auto 0;
+  background: transparent;
+  color: var(--text-soft);
+  border: none;
+  font-family: var(--font);
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* ── PULSE = subconscious eye magnet ── */
+@keyframes pulse {
+  0%,100% { box-shadow: 0 4px 24px rgba(232,117,10,0.3); }
+  50%      { box-shadow: 0 4px 36px rgba(232,117,10,0.6), 0 0 0 6px rgba(232,117,10,0.1); }
+}
+.pulse { animation: pulse 2.2s infinite; }
+
+/* ── HERO
+   Cream gradient = calm, welcoming
+   Subconscious: "this is a clean product" ── */
+.hero {
+  background: linear-gradient(160deg, var(--cream) 0%, var(--cream2) 60%, var(--cream3) 100%);
+  padding: 36px 20px 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; top:-80px; left:-80px;
+  width: 250px; height: 250px;
+  background: radial-gradient(circle, rgba(232,117,10,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.social-proof-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--brown);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 16px;
+  border-radius: 99px;
+  margin-bottom: 16px;
+}
+.social-proof-badge span { color: var(--amber); }
+.hero h1 {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.45;
+  color: var(--brown);
+  margin-bottom: 12px;
+}
+.hero h1 em { color: var(--orange); font-style: normal; }
+.hero-sub {
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin-bottom: 22px;
+  max-width: 340px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-img {
+  width: 100%;
+  max-width: 460px;
+  border-radius: var(--radius-lg);
+  margin: 0 auto 22px;
+  display: block;
+  box-shadow: 0 10px 40px rgba(232,117,10,0.2);
+}
+
+/* ── STATS
+   Numbers = social proof = trust trigger ── */
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  margin-bottom: 22px;
+}
+.stat-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 14px 8px;
+  border: 1.5px solid var(--orange-light);
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+}
+.stat-num {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--orange);
+  display: block;
+}
+.stat-label {
+  font-size: 11px;
+  color: var(--text-soft);
+  font-weight: 600;
+  margin-top: 2px;
+  display: block;
+}
+
+/* ── TRUST BAR
+   Orange bg = action, confidence, warmth ── */
+.trust-bar {
+  background: var(--orange);
+  padding: 14px 16px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ── SECTIONS ── */
+.section { padding: 40px 20px; background: var(--white); }
+.section-cream { padding: 40px 20px; background: var(--cream); }
+.section-cream2 { padding: 40px 20px; background: var(--cream2); }
+
+/* ── SECTION BADGE
+   Color = anchors the psychological intent of each section ── */
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 5px 14px;
+  border-radius: 99px;
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+}
+.badge-orange { background: var(--orange-light); color: var(--orange); }
+.badge-brown  { background: var(--cream3); color: var(--brown-mid); }
+.badge-red    { background: var(--red-light); color: var(--red); }
+.badge-green  { background: var(--green-light); color: var(--green); }
+.badge-amber  { background: var(--amber-light); color: var(--brown-mid); }
+.badge-white  { background: rgba(255,255,255,0.15); color: var(--white); }
+
+.section-h {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.45;
+  color: var(--brown);
+  margin-bottom: 8px;
+}
+.section-h em { color: var(--orange); font-style: normal; }
+.section-h-white { color: var(--white); }
+.section-p {
+  font-size: 14px;
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+.section-p-white { color: rgba(255,255,255,0.72); }
+
+.full-img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  display: block;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* ── GIF = motion draws attention subconsciously ── */
+.gif-wrap {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 3px solid var(--orange);
+  margin: 14px 0;
+  box-shadow: var(--shadow-orange);
+}
+.gif-wrap img { width: 100%; display: block; }
+.gif-caption { text-align: center; font-size: 12px; color: var(--text-soft); margin-top: 6px; }
+
+/* ── BEFORE AFTER
+   Red = negative/before = pain
+   Green = positive/after = desire ── */
+.ba-img { width: 100%; border-radius: var(--radius-lg); display: block; margin-bottom: 8px; }
+.ba-labels { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.ba-label {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+}
+/* Red before = pain reminder = "I don't want this" */
+.ba-before { background: var(--red-light); color: var(--red); }
+/* Green after = desire = "I want this" */
+.ba-after  { background: var(--green-light); color: var(--green); }
+
+/* ── STEPS ── */
+.steps { display: flex; flex-direction: column; gap: 12px; margin: 16px 0; }
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  border: 1.5px solid var(--orange-light);
+  box-shadow: var(--shadow-soft);
+}
+/* Orange step number = action, momentum */
+.step-num {
+  background: var(--orange);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 900;
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 10px rgba(232,117,10,0.3);
+}
+.step-title { font-size: 15px; font-weight: 800; color: var(--brown); margin-bottom: 3px; }
+.step-desc { font-size: 13px; color: var(--text-mid); line-height: 1.6; }
+
+/* ── DARK PREMIUM SECTION
+   Dark brown = luxury, authority, premium brand feel
+   Orange accents = energy within the calm ── */
+.section-premium {
+  padding: 40px 20px;
+  background: var(--brown);
+}
+.premium-box {
+  background: rgba(255,255,255,0.06);
+  border: 1.5px solid rgba(245,166,35,0.25);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  text-align: center;
+  margin: 14px 0;
+}
+.tiktok-num {
+  font-size: 46px;
+  font-weight: 900;
+  color: var(--amber);
+  display: block;
+  line-height: 1;
+}
+.tiktok-sub { font-size: 13px; color: rgba(255,255,255,0.65); margin: 6px 0 16px; }
+.tiktok-img { width: 100%; border-radius: var(--radius-md); display: block; }
+
+/* ── REVIEWS
+   White cards = clean, trustworthy
+   Orange stars = warmth, authenticity ── */
+.reviews { display: flex; flex-direction: column; gap: 12px; margin: 16px 0; }
+.review {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  border: 1.5px solid var(--orange-light);
+  box-shadow: var(--shadow-soft);
+}
+.review-hd { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.review-av {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--brown);
+  color: var(--white);
+  font-size: 15px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.review-name { font-size: 14px; font-weight: 800; color: var(--brown); }
+/* Orange stars = authentic warmth, not cold blue */
+.review-stars { color: var(--orange); font-size: 13px; }
+/* Green verified = trust signal */
+.review-verified { font-size: 11px; color: var(--green); font-weight: 700; }
+.review-body { font-size: 13px; color: var(--text-mid); line-height: 1.75; }
+.review-city { font-size: 11px; color: var(--text-soft); margin-top: 5px; }
+
+/* ── COMPARISON TABLE ── */
+.compare {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+.compare th {
+  padding: 12px 8px;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+.compare th:first-child { text-align: right; background: var(--brown); color: var(--white); }
+/* Orange = us = winning */
+.compare th.us { background: var(--orange); color: var(--white); }
+/* Muted them = loser, don't want this */
+.compare th.them { background: var(--cream3); color: var(--text-soft); }
+.compare td {
+  padding: 11px 8px;
+  font-size: 13px;
+  text-align: center;
+  border-bottom: 1px solid var(--orange-light);
+}
+.compare td:first-child {
+  text-align: right;
+  font-weight: 600;
+  color: var(--brown);
+  background: var(--cream);
+}
+.compare tr:last-child td { border-bottom: none; }
+/* Green yes = desire */
+.yes { color: var(--green); font-size: 17px; font-weight: 900; }
+/* Red no = pain reminder */
+.no  { color: var(--red); font-size: 17px; }
+
+/* ── FAQ ── */
+.faq { display: flex; flex-direction: column; gap: 8px; margin: 16px 0; }
+.faq-item {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--orange-light);
+  overflow: hidden;
+}
+.faq-q {
+  padding: 14px 16px;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--brown);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.faq-q::after { content: "＋"; color: var(--orange); font-size: 18px; }
+.faq-item.open .faq-q::after { content: "－"; }
+.faq-a {
+  padding: 0 16px;
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.8;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+.faq-item.open .faq-a { max-height: 200px; padding: 0 16px 14px; }
+
+/* ── URGENCY BAR
+   Red border = subconscious alarm = act now
+   Orange text highlight = reinforce action ── */
+.urgency {
+  background: #FFF5F0;
+  border: 2px solid var(--red);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+.urgency-icon { font-size: 26px; flex-shrink: 0; }
+.urgency-text { font-size: 13px; font-weight: 700; color: var(--brown); line-height: 1.6; }
+.urgency-text em { color: var(--red); font-style: normal; }
+
+/* ── BUNDLES
+   White cards = clean choice
+   Orange selected = clear winner highlight
+   Green savings = gain framing ── */
+.bundle-section { padding: 40px 20px; background: var(--cream2); }
+.bundles { display: flex; flex-direction: column; gap: 12px; margin: 16px 0; }
+.bundle {
+  border-radius: var(--radius-md);
+  padding: 16px;
+  border: 2px solid var(--orange-light);
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-soft);
+}
+/* Orange border when selected = clear decision anchor */
+.bundle.selected {
+  border-color: var(--orange);
+  background: #FFF5EC;
+  box-shadow: 0 2px 20px rgba(232,117,10,0.18);
+}
+.bundle-radio {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+}
+.bundle.selected .bundle-radio { border-color: var(--orange); background: var(--orange); }
+.bundle.selected .bundle-radio::after {
+  content: ''; width: 7px; height: 7px;
+  background: var(--white); border-radius: 50%;
+}
+.bundle-info { flex: 1; padding: 0 12px; }
+/* Orange best badge = social proof + urgency */
+.bundle-best {
+  background: var(--orange);
+  color: var(--white);
+  font-size: 10px; font-weight: 800;
+  padding: 2px 8px; border-radius: 99px;
+  display: inline-block; margin-bottom: 4px;
+}
+.bundle-title { font-size: 15px; font-weight: 800; color: var(--brown); }
+/* Green savings = gain framing = feels like winning */
+.bundle-save { font-size: 12px; color: var(--green); font-weight: 700; margin-top: 2px; }
+.bundle-prices { text-align: left; }
+.bundle-old { font-size: 12px; color: #bbb; text-decoration: line-through; }
+.bundle-price { font-size: 22px; font-weight: 900; color: var(--orange); }
+.bundle-per { font-size: 11px; color: var(--text-soft); }
+
+/* ── GUARANTEE SECTION
+   Dark brown = premium authority
+   Shield = subconscious safety trigger ── */
+.guarantee-box {
+  background: linear-gradient(135deg, var(--brown) 0%, var(--brown-mid) 100%);
+  border-radius: var(--radius-lg);
+  padding: 26px 22px;
+  text-align: center;
+  margin: 16px 0;
+  border: 1.5px solid rgba(245,166,35,0.2);
+}
+.guarantee-icon { font-size: 46px; margin-bottom: 10px; }
+.guarantee-title { color: var(--white); font-size: 18px; font-weight: 900; margin-bottom: 8px; }
+.guarantee-body { color: rgba(255,255,255,0.72); font-size: 13px; line-height: 1.75; }
+
+/* ── ORDER FORM SECTION
+   Dark brown = premium, serious
+   Subconscious: "this is a real transaction" ── */
+.form-section { padding: 40px 20px; background: var(--brown); }
+.form-title { font-size: 24px; font-weight: 900; color: var(--white); text-align: center; margin-bottom: 6px; }
+.form-title em { color: var(--amber); font-style: normal; }
+.form-sub { text-align: center; font-size: 14px; color: rgba(255,255,255,0.65); margin-bottom: 24px; }
+.form-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  max-width: 480px;
+  margin: 0 auto;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+}
+
+/* ── ORDER SUMMARY
+   Cream bg = calm, familiar
+   Green shipping = gain ── */
+.order-summary {
+  background: var(--cream);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border: 1.5px solid var(--orange-light);
+}
+.order-summary-title { font-size: 13px; font-weight: 800; color: var(--brown); margin-bottom: 8px; }
+.order-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 3px 0;
+  color: var(--text-mid);
+}
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: 900;
+  color: var(--brown);
+  padding-top: 8px;
+  margin-top: 8px;
+  border-top: 1.5px solid var(--orange-light);
+}
+.order-total span:last-child { color: var(--orange); }
+
+.form-group { margin-bottom: 16px; }
+.form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--brown);
+  margin-bottom: 6px;
+}
+/* Red asterisk = mild urgency on required fields */
+.form-label span { color: var(--red); }
+.form-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #E8D5C4;
+  border-radius: var(--radius-sm);
+  font-family: var(--font);
+  font-size: 15px;
+  color: var(--brown);
+  background: var(--white);
+  transition: border-color 0.2s;
+  direction: rtl;
+}
+/* Orange focus = brand consistency + action signal */
+.form-input:focus { outline: none; border-color: var(--orange); }
+.form-input::placeholder { color: #C4A882; }
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  padding: 18px 24px;
+  border-radius: var(--radius-md);
+  font-family: var(--font);
+  font-size: 19px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-orange);
+  text-align: center;
+}
+.submit-btn:hover { background: var(--orange-dark); transform: translateY(-2px); }
+.submit-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; box-shadow: none; }
+
+/* Green lock = safety, trust */
+.form-trust {
+  display: flex; align-items: center; gap: 8px;
+  justify-content: center; margin-top: 14px;
+}
+.form-trust p { font-size: 12px; color: var(--text-soft); text-align: center; }
+
+/* ── SUCCESS
+   Green = positive outcome = pleasure ── */
+.success-box {
+  display: none;
+  background: var(--green-light);
+  border: 2px solid var(--green);
+  border-radius: var(--radius-lg);
+  padding: 28px 20px;
+  text-align: center;
+}
+.success-icon { font-size: 52px; margin-bottom: 12px; }
+.success-title { font-size: 20px; font-weight: 900; color: var(--green); margin-bottom: 8px; }
+.success-sub { font-size: 14px; color: #166534; line-height: 1.75; }
+
+/* ── FOOTER ── */
+.footer {
+  background: var(--brown);
+  padding: 22px 20px;
+  text-align: center;
+  border-top: 2px solid rgba(245,166,35,0.2);
+}
+.footer p { color: rgba(255,255,255,0.45); font-size: 12px; }
+.footer em { color: var(--amber); font-style: normal; }
+
+/* ── SCROLL REVEAL ── */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ── SPINNER ── */
+.spinner {
+  width: 18px; height: 18px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  display: inline-block; vertical-align: middle; margin-left: 8px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading { display: none; }
+
+@media(min-width:480px){
+  .hero h1 { font-size: 32px; }
+  .section-h { font-size: 26px; }
+}
+
+/* ── STICKY ORDER BUTTON
+   Always visible on mobile = zero friction to buy
+   Orange = immediate action trigger ── */
+.sticky-cta {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 999;
+  padding: 12px 16px;
+  background: rgba(255,248,243,0.97);
+  border-top: 2px solid var(--orange);
+  box-shadow: 0 -4px 20px rgba(232,117,10,0.2);
+  display: none;
+}
+.sticky-cta a {
+  display: block;
+  width: 100%;
+  background: var(--orange);
+  color: var(--white);
+  text-align: center;
+  padding: 15px;
+  border-radius: var(--radius-md);
+  font-family: var(--font);
+  font-size: 17px;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: var(--shadow-orange);
+  animation: pulse 2.2s infinite;
+}
+/* Show sticky only on mobile */
+@media(max-width: 640px){
+  .sticky-cta { display: block; }
+  /* Add bottom padding so form isn't hidden behind sticky bar */
+  body { padding-bottom: 80px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT: Brown authority + amber warmth -->
+<div class="announcement">
+  🔥 عرض محدود — <em>خصم اليوم</em> + <strong>الشحن مجاناً لباب بيتك</strong> 🔥
+</div>
+
+<!-- HEADER: White trust + orange CTA always visible -->
+<header class="header">
+  <div class="logo">
+    <div class="logo-mark"><span class="logo-q">Q</span></div>
+    <span class="logo-name">QUARXERY</span>
+  </div>
+  <a href="#order-form" class="cta-btn">اطلب الآن 🛒</a>
+</header>
+
+<!-- HERO: Cream calm + orange urgency -->
+<section class="hero">
+  <div class="social-proof-badge">شاهده <span>+2.5 مليون</span> شخص على TikTok ✅</div>
+  <h1>صابونك العادي ما يكفي...<br><em>بشرتك تستحق تنظيفاً أعمق</em></h1>
+  <p class="hero-sub">غسول Quarxery يصل لعمق المسام ويقضي على الطفيليات المجهرية سبب الحبوب والحكة — فرق واضح من أول أسبوع</p>
+  <img src="images/1.webp" alt="غسول Quarxery" class="hero-img">
+  <div class="hero-stats">
+    <div class="stat-card">
+      <span class="stat-num">+2.5M</span>
+      <span class="stat-label">مشاهدة TikTok</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">98%</span>
+      <span class="stat-label">رضا العملاء</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">أسبوع</span>
+      <span class="stat-label">أول نتيجة</span>
+    </div>
+  </div>
+  <a href="#order-form" class="cta-btn cta-btn-lg pulse">🛒 اطلب الآن — الدفع عند الاستلام</a>
+  <a href="#order-form" class="cta-btn-secondary">⬇️ اعرف أكثر عن المنتج</a>
+</section>
+
+<!-- TRUST BAR: Orange action + white text -->
+<div class="trust-bar">
+  <div class="trust-item">💳 دفع عند الاستلام</div>
+  <div class="trust-item">🚚 شحن سريع</div>
+  <div class="trust-item">✅ منتج أصلي مضمون</div>
+</div>
+
+<!-- PROBLEM: White clean background — pain amplification -->
+<section class="section reveal">
+  <span class="badge badge-red">المشكلة الحقيقية</span>
+  <h2 class="section-h">كل يوم نفس المشكلة؟<br><em>دهون + حبوب + حكة + رائحة...</em></h2>
+  <p class="section-p">ممكن بشرتك تحتاج تنظيفاً أعمق من المعتاد. الصابون العادي ما يصل للمشكلة الحقيقية داخل المسام.</p>
+  <img src="images/2.webp" alt="مشاكل الجلد" class="full-img">
+</section>
+
+<!-- SCIENCE: Cream background — education zone -->
+<section class="section-cream reveal">
+  <span class="badge badge-brown">السبب الخفي</span>
+  <h2 class="section-h">طفيليات المسام —<br><em>عدوك الخفي اللي ما تشوفه</em></h2>
+  <p class="section-p">طفيليات مجهرية تعيش داخل مسام جلدك، تتكاثر في الليل، وتسبب الحبوب والحكة والالتهابات. الصابون العادي ما يقدر يوصل لها.</p>
+  <img src="images/8.webp" alt="طفيليات الجلد" class="full-img">
+  <img src="images/7.webp" alt="تنظيف عميق للمسام" class="full-img">
+  <div class="gif-wrap">
+    <img src="images/11.gif" alt="طفيليات المسام تحت المجهر">
+  </div>
+  <p class="gif-caption">شاهد كيف يعمل الغسول على إزالة الطفيليات من عمق المسام</p>
+</section>
+
+<!-- SOLUTION: White clean — product reveal -->
+<section class="section reveal">
+  <span class="badge badge-orange">الحل</span>
+  <h2 class="section-h">مو بس تنظيف...<br><em>عناية متكاملة في خطوة واحدة</em></h2>
+  <p class="section-p">غسول Quarxery صُمِّم خصيصاً للقضاء على طفيليات المسام، تقليل الحبوب، وترطيب الجلد — كل هذا في دش واحد.</p>
+  <img src="images/10.webp" alt="غسول Quarxery" class="full-img">
+  <img src="images/3.webp" alt="طريقة الاستخدام" class="full-img">
+</section>
+
+<!-- BEFORE AFTER: Red pain / Green desire -->
+<section class="section-cream2 reveal">
+  <span class="badge badge-green">النتائج</span>
+  <h2 class="section-h">الفرق <em>يتكلم عن نفسه</em></h2>
+  <p class="section-p">بشرة حقيقية، نتائج حقيقية — قبل وبعد الاستخدام.</p>
+  <img src="images/6.webp" alt="قبل وبعد" class="ba-img">
+  <div class="ba-labels">
+    <div class="ba-label ba-after">بعد — ناعمة ونقية ✅</div>
+    <div class="ba-label ba-before">قبل — حبوب وخشونة ❌</div>
+  </div>
+</section>
+
+<!-- INGREDIENTS: Cream — credibility zone -->
+<section class="section-cream reveal">
+  <span class="badge badge-amber">المكونات</span>
+  <h2 class="section-h">مكونات <em>فعّالة ومدروسة</em></h2>
+  <img src="images/4.webp" alt="المكونات" class="full-img">
+</section>
+
+<!-- HOW TO USE: White clean — simple steps -->
+<section class="section reveal">
+  <span class="badge badge-orange">طريقة الاستخدام</span>
+  <h2 class="section-h">سهل <em>وسريع</em></h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div>
+        <p class="step-title">بلّل جسمك بالماء الدافئ</p>
+        <p class="step-desc">الماء الدافئ يفتح المسام ويساعد الغسول يوصل للعمق</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div>
+        <p class="step-title">ضع كمية مناسبة وكوّن رغوة</p>
+        <p class="step-desc">دلّك المناطق المشكلة بحركات دائرية لمدة دقيقتين</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div>
+        <p class="step-title">اشطف جيداً واستمتع بالنتيجة</p>
+        <p class="step-desc">استخدمه يومياً للحصول على أفضل النتائج من أول أسبوع</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIKTOK PROOF: Dark premium brown — authority -->
+<section class="section-premium reveal">
+  <span class="badge badge-white">إثبات اجتماعي</span>
+  <h2 class="section-h section-h-white">شاهده <em>الملايين وجربوه</em></h2>
+  <p class="section-p section-p-white">منتج أثبت نفسه عالمياً — والآن متاح لك</p>
+  <div class="premium-box">
+    <span class="tiktok-num">+2.5M</span>
+    <p class="tiktok-sub">مشاهدة على TikTok في وقت قياسي</p>
+    <img src="images/9.webp" alt="TikTok views" class="tiktok-img">
+  </div>
+</section>
+
+<!-- COMPARISON: Clear visual dominance -->
+<section class="section reveal">
+  <span class="badge badge-brown">ليش Quarxery؟</span>
+  <h2 class="section-h">مو كل الغسولات <em>متساوية</em></h2>
+  <table class="compare">
+    <thead>
+      <tr>
+        <th style="background:var(--brown);color:#fff;">الميزة</th>
+        <th class="us">Quarxery ✓</th>
+        <th class="them">غسول عادي</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>يصل لعمق المسام</td><td><span class="yes">✓</span></td><td><span class="no">✗</span></td></tr>
+      <tr><td>يقضي على طفيليات الجلد</td><td><span class="yes">✓</span></td><td><span class="no">✗</span></td></tr>
+      <tr><td>مضاد للبكتيريا</td><td><span class="yes">✓</span></td><td><span class="no">✗</span></td></tr>
+      <tr><td>يرطب بدون دهنية</td><td><span class="yes">✓</span></td><td><span class="no">✗</span></td></tr>
+      <tr><td>يقلل الحبوب بشكل ملحوظ</td><td><span class="yes">✓</span></td><td><span class="no">✗</span></td></tr>
+      <tr><td>مناسب للاستخدام اليومي</td><td><span class="yes">✓</span></td><td><span class="yes" style="color:#bbb;">✓</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- REVIEWS: White clean trust -->
+<section class="section-cream reveal">
+  <span class="badge badge-orange">آراء العملاء</span>
+  <h2 class="section-h">ماذا قالوا <em>بعد التجربة؟</em></h2>
+  <div class="reviews">
+    <div class="review">
+      <div class="review-hd">
+        <div class="review-av">ن</div>
+        <div>
+          <p class="review-name">نورة العتيبي</p>
+          <p class="review-stars">★★★★★</p>
+          <p class="review-verified">✓ مشتري موثّق</p>
+        </div>
+      </div>
+      <p class="review-body">"والله ما توقعت الفرق يكون بهالسرعة. من أول أسبوع حسيت بشرتي أنعم وحبوب الظهر بدأت تقل. الرائحة حلوة وما تحس بجفاف. طلبت زجاجة ثانية!"</p>
+      <p class="review-city">📍 الرياض، السعودية</p>
+    </div>
+    <div class="review">
+      <div class="review-hd">
+        <div class="review-av" style="background:var(--orange);">س</div>
+        <div>
+          <p class="review-name">سارة الزهراني</p>
+          <p class="review-stars">★★★★★</p>
+          <p class="review-verified">✓ مشتري موثّق</p>
+        </div>
+      </div>
+      <p class="review-body">"كنت أعاني من الحكة المستمرة في الظهر وما لقيت حل. جربت هذا الغسول وبعد أسبوعين الحكة راحت تقريباً. بشرتي ناعمة وأنا مبسوطة جداً. أنصح فيه بشدة."</p>
+      <p class="review-city">📍 جدة، السعودية</p>
+    </div>
+    <div class="review">
+      <div class="review-hd">
+        <div class="review-av" style="background:var(--brown-mid);">م</div>
+        <div>
+          <p class="review-name">محمد القحطاني</p>
+          <p class="review-stars">★★★★☆</p>
+          <p class="review-verified">✓ مشتري موثّق</p>
+        </div>
+      </div>
+      <p class="review-body">"المنتج ممتاز صراحة. الرغوة كثيفة والرائحة مريحة. حبوب الظهر قلّت بشكل واضح في أقل من شهر. بطلب اثنتين المرة الجاية."</p>
+      <p class="review-city">📍 الدمام، السعودية</p>
+    </div>
+    <div class="review">
+      <div class="review-hd">
+        <div class="review-av">ر</div>
+        <div>
+          <p class="review-name">ريم الشمري</p>
+          <p class="review-stars">★★★★★</p>
+          <p class="review-verified">✓ مشتري موثّق</p>
+        </div>
+      </div>
+      <p class="review-body">"شريته لأني شفت الفيديو على تيكتوك وما ندمت. الفرق واضح من أول أسبوع. بشرتي صارت أنعم وأنظف. ما أقدر أستغني عنه هلأ."</p>
+      <p class="review-city">📍 مكة المكرمة، السعودية</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ: White clean — objection removal -->
+<section class="section reveal">
+  <span class="badge badge-brown">أسئلة شائعة</span>
+  <h2 class="section-h">عندك <em>سؤال؟</em></h2>
+  <div class="faq">
+    <div class="faq-item">
+      <div class="faq-q">متى أشوف النتائج؟</div>
+      <div class="faq-a">كثير من عملائنا يلاحظون فرقاً في الملمس من أول أسبوع. للنتائج المثلى في تقليل الحبوب، ننصح بالاستمرار 3-4 أسابيع.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">هل يناسب البشرة الحساسة؟</div>
+      <div class="faq-a">نعم — التركيبة مبنية على Amino Acid اللطيف الذي ينظف بعمق دون تجفيف أو تهيّج. مناسب للاستخدام اليومي.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">هل يستخدمه الرجال والنساء؟</div>
+      <div class="faq-a">بالتأكيد — الغسول مناسب للجنسين وجميع أنواع البشرة.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">كيف يتم التوصيل والدفع؟</div>
+      <div class="faq-a">الدفع نقداً عند الاستلام — ما تحتاج بطاقة أو حساب. التوصيل لجميع مناطق المملكة خلال 2-5 أيام عمل.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">ماذا لو ما أعجبني المنتج؟</div>
+      <div class="faq-a">نثق بمنتجنا 100%. إذا ما كنت راضياً تواصل معنا وسنجد لك الحل المناسب.</div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY: Red border = act now -->
+<div style="padding:0 20px;">
+  <div class="urgency reveal">
+    <div class="urgency-icon">⚡</div>
+    <div class="urgency-text">
+      الكميات محدودة — <em>الطلب يرتفع بشكل كبير هذا الأسبوع.</em><br>
+      الدفع نقداً عند الاستلام — التوصيل لجميع مناطق المملكة.
+    </div>
+  </div>
+</div>
+
+<!-- BUNDLES: Cream2 background — decision zone -->
+<section class="bundle-section reveal" id="bundles">
+  <span class="badge badge-orange">اختر عرضك</span>
+  <h2 class="section-h">كلما زدت <em>كلما وفّرت</em></h2>
+  <p class="section-p">اختر الكمية المناسبة — والدفع نقداً عند الاستلام</p>
+  <div class="bundles">
+    <div class="bundle" data-qty="1" data-price="215" data-sku="QUARXERY-1X">
+      <div class="bundle-radio"></div>
+      <div class="bundle-info">
+        <p class="bundle-title">🧴 زجاجة واحدة</p>
+        <p class="bundle-save">215 ر.س للزجاجة</p>
+      </div>
+      <div class="bundle-prices">
+        <p class="bundle-price">215 ر.س</p>
+      </div>
+    </div>
+    <div class="bundle selected" data-qty="2" data-price="320" data-sku="QUARXERY-2X">
+      <div class="bundle-radio"></div>
+      <div class="bundle-info">
+        <span class="bundle-best">⭐ الأكثر طلباً</span>
+        <p class="bundle-title">🧴🧴 زجاجتين</p>
+        <p class="bundle-save">وفّر 110 ر.س — 160 ر.س للزجاجة</p>
+      </div>
+      <div class="bundle-prices">
+        <p class="bundle-old">430 ر.س</p>
+        <p class="bundle-price">320 ر.س</p>
+      </div>
+    </div>
+    <div class="bundle" data-qty="3" data-price="399" data-sku="QUARXERY-3X">
+      <div class="bundle-radio"></div>
+      <div class="bundle-info">
+        <p class="bundle-title">🧴🧴🧴 ثلاث زجاجات</p>
+        <p class="bundle-save">وفّر 246 ر.س — 133 ر.س للزجاجة</p>
+      </div>
+      <div class="bundle-prices">
+        <p class="bundle-old">645 ر.س</p>
+        <p class="bundle-price">399 ر.س</p>
+      </div>
+    </div>
+  </div>
+  <a href="#order-form" class="cta-btn cta-btn-lg pulse">🛒 اطلب الآن — الدفع عند الاستلام</a>
+</section>
+
+<!-- GUARANTEE: Dark premium + shield -->
+<div style="padding:20px;">
+  <div class="guarantee-box reveal">
+    <div class="guarantee-icon">🛡️</div>
+    <h3 class="guarantee-title">ضمان رضاك أولويتنا</h3>
+    <p class="guarantee-body">نثق بجودة منتجنا 100٪. طلبك محمي والدفع نقداً عند الاستلام — ما فيه أي مخاطرة من جهتك. جرّب واحكم بنفسك.</p>
+  </div>
+</div>
+
+<!-- ORDER FORM: Dark brown serious + orange action -->
+<section class="form-section" id="order-form">
+  <h2 class="form-title">🛒 أكمل طلبك الآن<br><em>الدفع عند الاستلام</em></h2>
+  <p class="form-sub">أدخل بياناتك وسنتواصل معك لتأكيد الطلب</p>
+  <div class="form-card">
+    <div class="order-summary" id="order-summary">
+      <p class="order-summary-title">ملخص طلبك:</p>
+      <div class="order-row">
+        <span id="summary-product">غسول Quarxery × 2</span>
+        <span id="summary-price">320 ر.س</span>
+      </div>
+      <div class="order-row">
+        <span>الشحن</span>
+        <span style="color:var(--green);font-weight:700;">مجاني 🎁</span>
+      </div>
+      <div class="order-total">
+        <span>المجموع الكلي</span>
+        <span id="summary-total">320 ر.س</span>
+      </div>
+    </div>
+    <form id="cod-form">
+      <div class="form-group">
+        <label class="form-label">الاسم الكامل <span>*</span></label>
+        <input type="text" class="form-input" id="field-name" placeholder="أدخل اسمك الكامل" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">رقم الجوال <span>*</span></label>
+        <input type="tel" class="form-input" id="field-phone" placeholder="05XXXXXXXX" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">المدينة <span>*</span></label>
+        <select class="form-input" id="field-city" required>
+          <option value="">اختر مدينتك</option>
+          <option>الرياض</option><option>جدة</option><option>مكة المكرمة</option>
+          <option>المدينة المنورة</option><option>الدمام</option><option>الخبر</option>
+          <option>الظهران</option><option>الطائف</option><option>تبوك</option>
+          <option>أبها</option><option>القصيم</option><option>حائل</option>
+          <option>نجران</option><option>جيزان</option><option>ينبع</option>
+          <option>مدينة أخرى</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">العنوان التفصيلي <span>*</span></label>
+        <input type="text" class="form-input" id="field-address" placeholder="الحي، الشارع، رقم المبنى" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">ملاحظات إضافية</label>
+        <input type="text" class="form-input" id="field-notes" placeholder="أي تفاصيل إضافية (اختياري)">
+      </div>
+      <button type="submit" class="submit-btn pulse" id="submit-btn">
+        <span id="btn-text">✅ تأكيد الطلب — الدفع عند الاستلام</span>
+        <span class="loading" id="btn-loading"><span class="spinner"></span> جاري الإرسال...</span>
+      </button>
+      <div class="form-trust">
+        <span>🔒</span>
+        <p>بياناتك محمية وآمنة — لن تُشارك مع أي جهة خارجية</p>
+      </div>
+    </form>
+    <div class="success-box" id="success-box">
+      <div class="success-icon">🎉</div>
+      <h3 class="success-title">تم استلام طلبك بنجاح!</h3>
+      <p class="success-sub">شكراً لك! سيتواصل معك فريقنا خلال 24 ساعة لتأكيد الطلب وترتيب التوصيل. الدفع عند الاستلام.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STICKY ORDER BUTTON — always visible on mobile -->
+<div class="sticky-cta">
+  <a href="#order-form">🛒 اطلب الآن — الدفع عند الاستلام</a>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 <em>QUARXERY</em> — جميع الحقوق محفوظة</p>
+  <p style="margin-top:6px;">عناية حقيقية، نتائج حقيقية</p>
+</footer>
+
+<script>
+function getUTM(){
+  var p=new URLSearchParams(window.location.search);
+  return {
+    utm_source:p.get('utm_source')||'',
+    utm_medium:p.get('utm_medium')||'',
+    utm_campaign:p.get('utm_campaign')||'',
+    utm_term:p.get('utm_term')||'',
+    utm_content:p.get('utm_content')||''
+  };
+}
+
+var selectedBundle={qty:2,price:320,sku:'QUARXERY-2X'};
+
+document.querySelectorAll('.bundle').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.bundle').forEach(function(x){x.classList.remove('selected');});
+    b.classList.add('selected');
+    selectedBundle={qty:parseInt(b.dataset.qty),price:parseInt(b.dataset.price),sku:b.dataset.sku};
+    updateSummary();
+  });
+});
+
+function updateSummary(){
+  var names={1:'غسول Quarxery × 1',2:'غسول Quarxery × 2',3:'غسول Quarxery × 3'};
+  document.getElementById('summary-product').textContent=names[selectedBundle.qty];
+  document.getElementById('summary-price').textContent=selectedBundle.price+' ر.س';
+  document.getElementById('summary-total').textContent=selectedBundle.price+' ر.س';
+}
+
+document.querySelectorAll('.faq-q').forEach(function(q){
+  q.addEventListener('click',function(){
+    var item=q.parentElement;
+    var isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(x){x.classList.remove('open');});
+    if(!isOpen) item.classList.add('open');
+  });
+});
+
+var observer=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(entry.isIntersecting) entry.target.classList.add('visible');
+  });
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(function(el){observer.observe(el);});
+
+// Fire InitiateCheckout when any CTA is clicked
+document.querySelectorAll('a[href="#order-form"], .sticky-cta a').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    if(typeof fbq !== 'undefined'){
+      fbq('track','InitiateCheckout',{
+        value: selectedBundle.price,
+        currency: 'SAR',
+        content_name: 'غسول Quarxery المُعمّق',
+        num_items: selectedBundle.qty
+      });
+    }
+  });
+});
+
+document.getElementById('cod-form').addEventListener('submit',function(e){
+  e.preventDefault();
+  var name=document.getElementById('field-name').value.trim();
+  var phone=document.getElementById('field-phone').value.trim();
+  var city=document.getElementById('field-city').value;
+  var address=document.getElementById('field-address').value.trim();
+  var notes=document.getElementById('field-notes').value.trim();
+  var utm=getUTM();
+
+  if(!name||!phone||!city||!address){alert('يرجى تعبئة جميع الحقول المطلوبة');return;}
+
+  var btn=document.getElementById('submit-btn');
+  document.getElementById('btn-text').style.display='none';
+  document.getElementById('btn-loading').style.display='inline';
+  btn.disabled=true;
+
+  var payload={
+    country:'SA',name:name,phone:phone,
+    address:city+' — '+address,
+    url:window.location.href,
+    sku:selectedBundle.sku,
+    product:'غسول Quarxery المُعمّق — ضد حبوب الظهر وطفيليات المسام',
+    quantity:selectedBundle.qty,price:selectedBundle.price,currency:'SAR',
+    notes:notes,
+    utm_source:utm.utm_source,utm_medium:utm.utm_medium,
+    utm_campaign:utm.utm_campaign,utm_term:utm.utm_term,utm_content:utm.utm_content,
+    national_address:city+' — '+address
+  };
+
+  fetch('https://script.google.com/macros/s/AKfycbz6IV7prZsgyKAnjwJhL5-q69mxXcxj77bssqJDwp74NPtnrzEZAk9UrbdFH40LZnJhwg/exec',{
+    method:'POST',mode:'no-cors',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify(payload)
+  }).then(function(){showSuccess();}).catch(function(){showSuccess();});
+});
+
+function showSuccess(){
+  document.getElementById('cod-form').style.display='none';
+  document.getElementById('order-summary').style.display='none';
+  document.getElementById('success-box').style.display='block';
+  // Fire Meta Purchase event
+  if(typeof fbq !== 'undefined'){
+    fbq('track','Purchase',{
+      value: selectedBundle.price,
+      currency: 'SAR',
+      content_name: 'غسول Quarxery المُعمّق',
+      content_ids: [selectedBundle.sku],
+      content_type: 'product',
+      num_items: selectedBundle.qty
+    });
+  }
+}
+</script>
+</body>
+</html>
