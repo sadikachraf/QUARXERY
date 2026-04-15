@@ -686,10 +686,23 @@ body {
   border-radius: var(--radius-lg);
   padding: 28px 20px;
   text-align: center;
+  margin-top: 8px;
 }
-.success-icon { font-size: 52px; margin-bottom: 12px; }
-.success-title { font-size: 20px; font-weight: 900; color: var(--green); margin-bottom: 8px; }
-.success-sub { font-size: 14px; color: #166534; line-height: 1.75; }
+.success-icon { font-size: 52px; margin-bottom: 12px; display: block; }
+.success-title { font-size: 22px; font-weight: 900; color: var(--green); margin-bottom: 12px; }
+.success-urgent {
+  background: var(--orange);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: right;
+}
+.success-urgent-icon { font-size: 22px; flex-shrink: 0; }
+.success-urgent-text { font-size: 14px; font-weight: 800; color: var(--white); line-height: 1.6; }
+.success-sub { font-size: 13px; color: #166534; line-height: 1.75; margin-top: 10px; }
 
 /* ── FOOTER ── */
 .footer {
@@ -1116,9 +1129,15 @@ body {
     </form>
 
     <div class="success-box" id="success-box">
-      <div class="success-icon">🎉</div>
+      <span class="success-icon">🎉</span>
       <h3 class="success-title">تم استلام طلبك بنجاح!</h3>
-      <p class="success-sub">شكراً لك! سيتواصل معك فريقنا خلال 24 ساعة لتأكيد الطلب وترتيب التوصيل. الدفع عند الاستلام.</p>
+      <div class="success-urgent">
+        <div class="success-urgent-icon">📞</div>
+        <div class="success-urgent-text">
+          سيتصل بك فريقنا خلال أقل من ساعة لتأكيد طلبك — تأكد إن جوالك شغّال وقريب منك!
+        </div>
+      </div>
+      <p class="success-sub">بمجرد تأكيد الطلب هاتفياً، سيتم تجهيز شحنتك وتوصيلها لباب بيتك خلال 2-5 أيام عمل. الدفع عند الاستلام فقط — ما في أي مخاطرة. 🛡️</p>
     </div>
 
   </div>
@@ -1232,9 +1251,23 @@ document.getElementById('cod-form').addEventListener('submit',function(e){
 });
 
 function showSuccess(){
+  // Hide form elements
   document.getElementById('cod-form').style.display='none';
   document.getElementById('order-summary').style.display='none';
-  document.getElementById('success-box').style.display='block';
+  // Hide bundle steps labels
+  var stepLabels=document.querySelectorAll('.form-card > p');
+  stepLabels.forEach(function(el){el.style.display='none';});
+  // Hide bundles inside form card
+  var bundlesInCard=document.querySelector('.form-card .bundles');
+  if(bundlesInCard) bundlesInCard.style.display='none';
+  // Hide divider
+  var divider=document.querySelector('.form-card div[style*="height:1.5px"]');
+  if(divider) divider.style.display='none';
+  // Show success
+  var successBox=document.getElementById('success-box');
+  successBox.style.display='block';
+  // Scroll to success box
+  successBox.scrollIntoView({behavior:'smooth', block:'center'});
   // Fire Meta Purchase event
   if(typeof fbq !== 'undefined'){
     fbq('track','Purchase',{
