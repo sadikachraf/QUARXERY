@@ -940,7 +940,7 @@ body {
   <span class="badge badge-red">المشكلة الحقيقية</span>
   <h2 class="section-h">كل يوم نفس المشكلة؟<br><em>دهون + حبوب + حكة + رائحة...</em></h2>
   <p class="section-p">ممكن بشرتك تحتاج تنظيفاً أعمق من المعتاد. الصابون العادي ما يصل للمشكلة الحقيقية داخل المسام.</p>
-  <img src="images/2.webp" alt="مشاكل الجلد" class="full-img">
+  <img src="images/2.webp" alt="مشاكل الجلد" class="full-img" loading="lazy">
 </section>
 
 <!-- SCIENCE: Cream background — education zone -->
@@ -948,10 +948,10 @@ body {
   <span class="badge badge-brown">السبب الخفي</span>
   <h2 class="section-h">طفيليات المسام —<br><em>عدوك الخفي اللي ما تشوفه</em></h2>
   <p class="section-p">طفيليات مجهرية تعيش داخل مسام جلدك، تتكاثر في الليل، وتسبب الحبوب والحكة والالتهابات. الصابون العادي ما يقدر يوصل لها.</p>
-  <img src="images/8.webp" alt="طفيليات الجلد" class="full-img">
-  <img src="images/7.webp" alt="تنظيف عميق للمسام" class="full-img">
+  <img src="images/8.webp" alt="طفيليات الجلد" class="full-img" loading="lazy">
+  <img src="images/7.webp" alt="تنظيف عميق للمسام" class="full-img" loading="lazy">
   <div class="gif-wrap">
-    <img src="images/11.gif" alt="طفيليات المسام تحت المجهر">
+    <img src="images/11.gif" alt="طفيليات المسام تحت المجهر" loading="lazy">
   </div>
   <p class="gif-caption">شاهد كيف يعمل الغسول على إزالة الطفيليات من عمق المسام</p>
 </section>
@@ -962,7 +962,7 @@ body {
   <h2 class="section-h">مو بس تنظيف...<br><em>عناية متكاملة في خطوة واحدة</em></h2>
   <p class="section-p">غسول Quarxery صُمِّم خصيصاً للقضاء على طفيليات المسام، تقليل الحبوب، وترطيب الجلد — كل هذا في دش واحد.</p>
   <img src="images/10.webp" alt="غسول Quarxery" class="full-img">
-  <img src="images/3.webp" alt="طريقة الاستخدام" class="full-img">
+  <img src="images/3.webp" alt="طريقة الاستخدام" class="full-img" loading="lazy">
 </section>
 
 <!-- BEFORE AFTER: Red pain / Green desire -->
@@ -970,7 +970,7 @@ body {
   <span class="badge badge-green">النتائج</span>
   <h2 class="section-h">الفرق <em>يتكلم عن نفسه</em></h2>
   <p class="section-p">بشرة حقيقية، نتائج حقيقية — قبل وبعد الاستخدام.</p>
-  <img src="images/6.webp" alt="قبل وبعد" class="ba-img">
+  <img src="images/6.webp" alt="قبل وبعد" class="ba-img" loading="lazy">
   <div class="ba-labels">
     <div class="ba-label ba-after">بعد — ناعمة ونقية ✅</div>
     <div class="ba-label ba-before">قبل — حبوب وخشونة ❌</div>
@@ -981,7 +981,7 @@ body {
 <section class="section-cream reveal">
   <span class="badge badge-amber">المكونات</span>
   <h2 class="section-h">مكونات <em>فعّالة ومدروسة</em></h2>
-  <img src="images/4.webp" alt="المكونات" class="full-img">
+  <img src="images/4.webp" alt="المكونات" class="full-img" loading="lazy">
 </section>
 
 <!-- HOW TO USE: White clean — simple steps -->
@@ -1021,7 +1021,7 @@ body {
   <div class="premium-box">
     <span class="tiktok-num">+2.5M</span>
     <p class="tiktok-sub">مشاهدة على TikTok في وقت قياسي</p>
-    <img src="images/9.webp" alt="TikTok views" class="tiktok-img">
+    <img src="images/9.webp" alt="TikTok views" class="tiktok-img" loading="lazy">
   </div>
 </section>
 
@@ -1222,13 +1222,15 @@ document.getElementById('cod-form').addEventListener('submit',function(e){
   var address=document.getElementById('field-address').value.trim();
   var utm=getUTM();
 
-  if(!name||!phone||!city||!address){alert('يرجى تعبئة جميع الحقول المطلوبة');return;}
+  if(!name||!phone||!city||!address){
+    alert('يرجى تعبئة جميع الحقول المطلوبة');
+    return;
+  }
 
-  var btn=document.getElementById('submit-btn');
-  document.getElementById('btn-text').style.display='none';
-  document.getElementById('btn-loading').style.display='inline';
-  btn.disabled=true;
+  // SHOW THANK YOU INSTANTLY — don't wait for fetch
+  showSuccess();
 
+  // Send to Google Sheets in background — user doesn't wait
   var payload={
     country:'SA',name:name,phone:phone,
     address:city+' — '+address,
@@ -1246,39 +1248,53 @@ document.getElementById('cod-form').addEventListener('submit',function(e){
     method:'POST',mode:'no-cors',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify(payload)
-  }).then(function(){showSuccess();}).catch(function(){showSuccess();});
+  }).catch(function(){});
 });
 
 function showSuccess(){
-  // Hide form elements
-  document.getElementById('cod-form').style.display='none';
-  document.getElementById('order-summary').style.display='none';
-  // Hide bundle steps labels
-  var stepLabels=document.querySelectorAll('.form-card > p');
-  stepLabels.forEach(function(el){el.style.display='none';});
-  // Hide bundles inside form card
-  var bundlesInCard=document.querySelector('.form-card .bundles');
-  if(bundlesInCard) bundlesInCard.style.display='none';
-  // Hide divider
-  var divider=document.querySelector('.form-card div[style*="height:1.5px"]');
-  if(divider) divider.style.display='none';
-  // Show success
-  var successBox=document.getElementById('success-box');
-  successBox.style.display='block';
-  // Scroll to success box
-  successBox.scrollIntoView({behavior:'smooth', block:'center'});
+  // Hide everything in form card instantly
+  var card=document.querySelector('.form-card');
+  card.innerHTML='<div class="success-box" style="display:block;">'
+    +'<span class="success-icon">🎉</span>'
+    +'<h3 class="success-title">تم استلام طلبك بنجاح!</h3>'
+    +'<div class="success-urgent">'
+    +'<div class="success-urgent-icon">📞</div>'
+    +'<div class="success-urgent-text">سيتصل بك فريقنا خلال أقل من ساعة لتأكيد طلبك — تأكد إن جوالك شغّال وقريب منك!</div>'
+    +'</div>'
+    +'<p class="success-sub">بمجرد تأكيد الطلب هاتفياً، سيتم تجهيز شحنتك وتوصيلها لباب بيتك خلال 2-5 أيام عمل. الدفع عند الاستلام فقط — ما في أي مخاطرة. 🛡️</p>'
+    +'</div>';
+  // Scroll to success instantly
+  card.scrollIntoView({behavior:'smooth',block:'center'});
   // Fire Meta Purchase event
-  if(typeof fbq !== 'undefined'){
+  if(typeof fbq!=='undefined'){
     fbq('track','Purchase',{
-      value: selectedBundle.price,
-      currency: 'SAR',
-      content_name: 'غسول Quarxery المُعمّق',
-      content_ids: [selectedBundle.sku],
-      content_type: 'product',
-      num_items: selectedBundle.qty
+      value:selectedBundle.price,
+      currency:'SAR',
+      content_name:'غسول Quarxery المُعمّق',
+      content_ids:[selectedBundle.sku],
+      content_type:'product',
+      num_items:selectedBundle.qty
     });
   }
 }
+
+// CONVERSION BOOSTER 1: Input focus fires ViewContent pixel
+document.getElementById('field-name').addEventListener('focus',function(){
+  if(typeof fbq!=='undefined'){
+    fbq('track','ViewContent',{content_name:'Quarxery Order Form',currency:'SAR',value:selectedBundle.price});
+  }
+},{once:true});
+
+// CONVERSION BOOSTER 2: Phone field focus fires AddToCart pixel
+document.getElementById('field-phone').addEventListener('focus',function(){
+  if(typeof fbq!=='undefined'){
+    fbq('track','AddToCart',{content_name:'غسول Quarxery المُعمّق',currency:'SAR',value:selectedBundle.price,content_ids:[selectedBundle.sku]});
+  }
+},{once:true});
 </script>
+
+<!-- SPEED: Preload critical images -->
+<link rel="preload" as="image" href="images/1.webp">
+<link rel="preload" as="image" href="images/10.webp">
 </body>
 </html>
